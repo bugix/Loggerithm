@@ -332,7 +332,7 @@ public struct Loggerithm {
     private func log(level: LogLevel, function: String = __FUNCTION__, file: String = __FILE__, line: Int = __LINE__, format: String, args: CVaListPointer) -> String
     {
         let dateTime = showDateTime ? (UsingNSLog ? "" : "\(dateFormatter.stringFromDate(NSDate())) ") : ""
-        let levelString = showLogLevel ? "[\(LogLevel.descritionForLogLevel(level))] " : ""
+        let levelString = showLogLevel ? "[\(LogLevel.descriptionForLogLevel(level))] " : ""
         
         var fileLine = ""
         if showFileName {

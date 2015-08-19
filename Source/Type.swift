@@ -52,7 +52,7 @@ public enum LogLevel: Int {
     
     - returns: A string.
     */
-    static public func descritionForLogLevel(logLevel: LogLevel) -> String {
+    static public func descriptionForLogLevel(logLevel: LogLevel) -> String {
         switch logLevel {
         case .Verbose: return "Verbose"
         case .Debug:   return "Debug"
@@ -64,7 +64,7 @@ public enum LogLevel: Int {
         }
     }
     
-    /// Defualt log level
+    /// Default log level
     /// Be sure to set the "DEBUG" symbol.
     /// Set it in the "Swift Compiler - Custom Flags" section, "Other Swift Flags" line. Add "-D DEBUG" entry.
     #if DEBUG
