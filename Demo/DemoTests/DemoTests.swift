@@ -9,6 +9,7 @@
 import UIKit
 import XCTest
 import Demo
+@testable import Demo
 
 class DemoTests: XCTestCase {
 	var log = Loggerithm()
